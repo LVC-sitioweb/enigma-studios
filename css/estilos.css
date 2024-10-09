@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: white;
+    color: black;
+    position: relative;
+    /*padding: 10px;*/
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: relative;
+    border-bottom: 1px solid #A80202;
+}
+
+
+
+.logo {
+    padding-top: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo a {
+    margin-left: 80px;
+}
+
+.logo a h1 {
+    /*font-size: 2.5em;*/
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.registrate {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.registrate a {
+    background: #A80202;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+
+/* Estilos para el menú */
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.9);
+    transition: left 0.4s ease; /* Animación suave */
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 45px;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+        color: darkred;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+}
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background: #A80202;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/*home*/
+#home, #sobre-nosotras, #proyectos {
+    margin-top: 40px;
+    padding: 12px;
+}
+
+#home h2, #sobre-nosotras h2 {
+    margin-bottom: 15px;
+}
+
+.home-img {
+    margin-top: 12px;
+    display: flex;
+    gap: 0 5px;
+    flex-wrap: wrap;
+}
+
+.home-img a {
+    width: 32%;
+}
+
+.home-texto {
+    margin-bottom: 20px;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*Nosotras*/
+#sobre-nosotras h2,
+#proyectos h2,
+#sobre-nosotras h2,
+#servicios h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sobre-nosotras {
+    /*display: flex;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-nosotras > div {
+    /*width: 49%;*/
+    margin-bottom: 20px;
+}
+
+.lara, .sol {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lara > div, .sol > div {
+    width: 48.5%;
+}
+
+.lara img, .sol img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid #A80202;
+}
+
+.lara div h3, .sol div h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+/*Proyectos */
+.proyectos div {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.proyectos div img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.proyectos div p {
+    margin: 12px 0;
+}
+
+.proyectos div a {
+    text-decoration: none;
+    background: #A80202;
+    color: #ffffff;
+    padding: 10px 12px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/*servicios*/
+#servicios {
+    padding: 12px;
+}
+
+.servicios {
+    text-align: center;
+}
+
+.servicios > div {
+    border: 1px solid #A80202;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*contacto */
+
+#contacto {
+    padding: 10px;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#anuncio {
+    display: flex;
+    justify-content: center;
+}
+
+#anuncio iframe {
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    justify-content: center;
+    border: 0;
+}
+
+.form-campo {
+    margin-bottom: 10px;
+}
+
+.form-campo label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+
+}
+
+.form-campo input, .form-textarea textarea {
+    width: 100%;
+    padding: 10px 5px;
+    border: #A80202 1px solid;
+    border-radius: 10px;
+}
+
+.form-textarea textarea {
+    height: 150px;
+}
+
+.form-enviar {
+    border: none;
+    background: #A80202;
+    color: #ffffff;
+    padding: 10px;
+    width: 120px;
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+}
+
+.img-form  {
+    text-align: center;
+}
+
+/*footer*/
+#footer {
+    background: #f1f1f1;
+}
+
+.footer-redes ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-redes ul li a i {
+    font-size: 20px;
+    color: #000;
+}
+
+.copy {
+    text-align: center;
+    padding: 14px;
+}
+
+/* Mostrar navegación en desktop */
+@media (min-width: 768px) {
+    #header {
+        position: static;
+    }
+
+    .header {
+        border-bottom: 0;
+    }
+
+    nav {
+        position: relative;
+        left: 0; /* Menú siempre visible en pantallas grandes */
+        width: auto;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: none; /* Ocultar el botón hamburguesa en pantallas grandes */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+
+    nav ul li a:hover {
+        color: #FFFF00;
+    }
+
+    .logo  {
+        text-align: center !important;
+        margin: 0;
+    }
+
+    .proyectos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proyectos > div {
+        width: 48%;
+    }
+
+    .sobre-nosotras, .contacto {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contacto > div {
+        width: 48%;
+    }
+
+    .sobre-nosotras {
+        display: flex;
+    }
+
+    .sobre-nosotras > div {
+        width: 48%;
+    }
+
+    .servicios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .servicios > div {
+        width: 32%;
+    }
+
+    .servicios > div img {
+        width: 100%;
+    }
+
+    #anuncio iframe {
+        width: 728px;
+        height: 90px;
+        object-fit: cover;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    #home,
+    #proyectos,
+    #sobre-nosotras,
+    #servicios,
+    #contacto {
+        width: 1200px;
+        margin: auto;
+    }
+}
