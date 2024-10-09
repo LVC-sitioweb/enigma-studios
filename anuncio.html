@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anuncio || Enigma Studio</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+        }
+        .cajaanuncio h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            width: 40%;
+            font-size: 25px;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .cajaanuncio {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            background-color: white;
+            justify-content: space-around;
+        }
+        .logo img {
+            height: 80px;
+            margin: 5px;
+        }
+
+        .botonanuncio {
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            background: #A80202;
+        }
+
+        @media (max-width: 727px) {
+            .cajaanuncio {
+                text-align: center;
+                height: 100vh;
+                align-content: center;
+            }
+            .cajaanuncio h2 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 800;
+                font-style: normal;
+                width: 100%;
+                font-size: 35px;
+                margin: 0;
+                padding: 20px 10px;
+                box-sizing: border-box;
+            }
+            .logo img {
+                height: 120px;
+                margin: 5px;
+            }
+            .logo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaanuncio">
+        <h1>Enigma Studio</h1>
+        <a href="index.html" class="logo" ><img src="imagenes/Logoenigma.jpeg" alt=""></a>
+        <a href="index.html" class="botonanuncio">Contactar</a>
+    </div>
+</body>
+</html>

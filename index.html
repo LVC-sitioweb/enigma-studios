@@ -1,67 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENIGM4 $TUDI0o</title>
-    <link rel="stylesheet" href="Styles.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio || ENIGM4 $TUDI0o </title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="css/slider.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="imagenes/Logoenigma.jpeg" alt="Logo del Estudio Creativo">
+    <header id="header">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/Logoenigma.jpeg" alt="Logo del Estudio Creativo" >
+                    <h1><em>E</em>NIGM4 <em>$</em>TUDI0o</h1>
+                </a>
+            </div>
+            <div class="registrate">
+                <a href="contacto.html">Contáctanos</a>
+            </div>
         </div>
-        <h1><em>E</em>NIGM4 <em>$</em>TUDI0o</h1>
-        <div class="Regístrate">
-            <a href="#">Contáctanos</a>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre-nosotras">Sobr3 Nosotr4s</a></li>
-            <li><a href="#proyectos">Pr0yecto$</a></li>
-            <li><a href="#servicios">$erv!cios</a></li>
-            <li><a href="#contacto">Con7act0</a></li>
-        </ul>
-    </nav>
-    
-    <section id="sobre-nosotras">
-        <h2>$08r3 |\|0$07r45</h2>
-        <div>
-            <p>Somos un estudio dedicado a la producción y dirección creativa. Nuestro equipo de profesionales se especializa en llevar a cabo proyectos visuales que van desde sesiones fotográficas hasta dirección de arte en campañas publicitarias.</p>
-        </div>
-    </section>
-    
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div>
-            <img src="imagenes/novias1.jpg" alt="Proyecto 1">
-            <p>Descripción del Proyecto 1.</p>
-        </div>
-        <div>
-            <img src="imagenes/novias6.jpg" alt="Proyecto 2">
-            <p>Descripción del Proyecto 2.</p>
-        </div>
-    </section>
-    
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <div>
+
+        <!-- Menú deslizante -->
+        <nav id="nav-menu">
             <ul>
-                <li>Dirección creativa</li>
-                <li>Producción fotográfica</li>
-                <li>Styling y arte</li>
-                <li>Consultoría creativa</li>
+                <li><a href="nosotras.html">Sobr3 Nosotr4s</a></li>
+                <li><a href="proyectos.html">Pr0yecto$</a></li>
+                <li><a href="servicios.html">$erv!cios</a></li>
+                <li><a href="contacto.html">Con7act0</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- slider-->
+    <div class="swiper-container loading">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(imagenes/slider01.png)">
+                <img src="imagenes/slider01.png" class="entity-img" />
+                <div class="content">
+                    
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(imagenes/relleno2.jpg)">
+                <img src="imagenes/relleno2.jpg" class="entity-img" />
+                <div class="content">
+                    
+
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(imagenes/relleno4.png)">
+                <img src="imagenes/relleno4.png" class="entity-img" />
+                <div class="content">
+                   
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(imagenes/novias4.jpg)">
+                <img src="imagenes/novias4.jpg" class="entity-img" />
+                <div class="content">
+                   
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    <!-- fin slider -->
+    <main>
+        <section id="home">
+            <h2>$0LV3 7H£ ∑N¡G|\/|4</h2>
+            <div class="home">
+                <div class="home-texto">
+                    <p>Bienvenido a un espacio donde la creatividad toma forma. En nuestro estudio, fusionamos arte, diseño y estrategia para crear conceptos únicos que trascienden lo convencional. Nos mueve la innovación, el diseño funcional y la estética que cuenta historias. Aquí, las ideas fluyen, se transforman y se materializan en proyectos que inspiran. Te invitamos a descubrir nuevas formas de conectar, crear y transformar.</p>
+                </div>
+                <div class="home-img">
+                    <a class="example-image-link" href="imagenes/lentes3.jpeg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/lentes3.jpeg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/lookbook1.jpeg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/lookbook1.jpeg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/lookbook2.jpeg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/lookbook2.jpeg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/lookbook3.jpeg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/lookbook3.jpeg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/novias1.jpg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/novias1.jpg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/novias2.jpg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/novias2.jpg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/novias3.jpg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/novias3.jpg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/novias5.jpg" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/novias5.jpg" alt="">
+                    </a>
+                    <a class="example-image-link" href="imagenes/quince3.JPG" data-lightbox="example-set">
+                        <img class="example-image" src="imagenes/quince3.JPG" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="anuncio">
+            <iframe src="https://catascardilli.github.io/RV.github.io/anunciorv.html" scrolling="no"></iframe>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-redes">
+            <ul>
+                <li><a href="https://www.instagram.com/enigma_studi0o/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
         </div>
-    </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div>
-            <p>Para consultas o colaboraciones, puedes contactarnos a través de nuestro correo: byenigmastudio@gmail.com o seguirnos en nuestras redes sociales.</p>
+        <div class="copy">
+            <p>Todos los derechos reservados 2024 </p>
         </div>
-    </section>
+    </footer>
+
+
+<script src="js/menu.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+    <script src="js/slider.js"></script>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>
-
